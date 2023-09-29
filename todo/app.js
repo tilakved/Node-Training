@@ -8,7 +8,10 @@ const PORT = process.env.PORT || 5000;
 const server = http.createServer(async (req, res) => {
   // /api/todos : GET
   if (req.url === "/api/todos" && req.method === "GET") {
-    const todos = await new Todo().getTodos();
+    const todos = {
+        message : "Please find your data",
+        data : await new Todo().getTodos()
+    }
     res.writeHead(200, { "Content-Type": "application/json" });
     res.end(JSON.stringify(todos));
   }
