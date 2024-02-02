@@ -4,3 +4,9 @@ hello_world/package-lock.json
 #todo
 todo/node_modules
 todo/package-lock.json
+#basic_test
+Basic Tests/node_modules
+Basic Tests/package-lock.json
+#todo-express
+todo-express/node_modules
+todo-express/package-lock.json
